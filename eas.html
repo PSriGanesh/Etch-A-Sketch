@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Etch a Sketch</title>
+		<style>
+			#container {
+				width: 600px;
+				height: 600px;
+				background-color: gray;
+				margin: auto;
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 100px;
+				border: 2px solid black;
+			}
+			body {
+				background-color: #1b147b;
+			}
+			.ind {
+				user-drag: none;
+				-webkit-user-drag: none;
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				display: inline-block;
+				box-sizing: border-box;
+				background-color: white;
+			}
+			.ind2 {
+				border: 1px solid grey;
+			}
+			#cp {
+				border: none;
+				padding: 0px;
+			}
+			#controls {
+				width: 600px;
+				display: flex;
+				justify-content: space-around;
+				margin: 20px auto;
+			}
+			button {
+				border: 2px solid black;
+				border-radius: 25px;
+				background-color: white;
+			}
+			button:active {
+				color: white;
+				background-color: black;
+			}
+			button:hover {
+				color: white;
+				background-color: black;
+			}
+			button.active {
+				color: white;
+				background-color: black;
+			}
+			#header {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				text-align: center;
+				left: 0px;
+				color: yellow;
+				background-color: #202124;
+			}
+		</style>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div id="header"><h1>Etch A Sketch</h1></div>
+		<div id="container"></div>
+		<div id="controls">
+		<button id="inp">Create Grid</button>
+		<button id="reset">Clear Board</button>
+		<button id="line">Toggle Grid Lines</button>
+		<button id="eraser">Eraser</button>
+		<button id="rainbow">Rainbow Mode</button>
+		<button id="normal">Normal Mode</button>
+		<input id = "cp" type="color">
+		</div>
+	</body>
+</html>
